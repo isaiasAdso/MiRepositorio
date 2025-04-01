@@ -16,7 +16,10 @@ function App() {
             <main className="containerMain">
               <AppRoutes />
             </main>
+            <div className="footerNavbar">
             <Navbar />
+            </div>
+          
           </div>
         </ActivePageProvider>
       </ThemeProvider>

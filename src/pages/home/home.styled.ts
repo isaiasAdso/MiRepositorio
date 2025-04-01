@@ -8,8 +8,8 @@ export const Container = styled.section`
     theme.CardTranparente}; /* Color oscuro con transparencia */
   color: ${({ theme }) => theme.color};
   width: 80%;
-  height: 600px;
-  max-height: 600px;
+  height: 90%;
+
   border-radius: 20px;
 
 
@@ -19,7 +19,7 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    height: 900px;
+    height: 700px;
     padding: 10px;
     flex-direction: column;
     overflow-y: hidden;

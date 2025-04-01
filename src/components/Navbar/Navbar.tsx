@@ -12,11 +12,9 @@ const NavbarContainer = styled.nav`
   padding: 12px 20px;
   border-radius: 15px;
   width: 90%;
+  height: 70px;
   max-width: 400px;
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+
 `;
 
 const NavItem = styled.div<{ $isActive?: boolean }>`

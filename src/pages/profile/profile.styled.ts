@@ -20,7 +20,7 @@ export const ProfileContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    height: 900px;
+    height: 700px;
     padding: 10px;
     flex-direction: column;
     overflow-y: hidden;
@@ -43,6 +43,7 @@ export const Column1 = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
+    order: 2;
   }
 
   @media screen and (max-width: 480px) {
@@ -63,6 +64,7 @@ export const Column2 = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
+    order: 1;
   }
 
   @media screen and (max-width: 480px) {
@@ -84,6 +86,7 @@ export const Column3 = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
+    order: 3;
   }
 
   @media screen and (max-width: 480px) {

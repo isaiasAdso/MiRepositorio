@@ -6,9 +6,6 @@ const SwitchToogle = () => {
 
   return (
     <div style={{
-      position: "absolute",
-      top: 20,
-      right: 20,
       display: "flex",
       alignItems: "center",
       justifyContent: "center",

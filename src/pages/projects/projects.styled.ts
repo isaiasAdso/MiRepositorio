@@ -6,15 +6,22 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   gap: 20px;
   overflow-y: auto;
+  padding: 20px;
   scrollbar-width: none;
   color: ${({ theme }) => theme.color};
-  flex: 1;
+
   width: 100%;
-  height: 600px;
-  max-height: 600px;
+  height: 90%;
   border-radius: 20px;
 
- 
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 export const CardProject = styled.div`
@@ -30,6 +37,12 @@ export const CardProject = styled.div`
 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+  }
+
   @media screen and (max-width: 480px) {
     width: 100%;
     height: auto;
@@ -43,6 +56,12 @@ export const HeaderCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
 
   @media screen and (max-width: 480px) {
     width: 80%;
@@ -59,7 +78,11 @@ export const HeaderCard = styled.div`
       height: 150px;
       width: 150px;
     }
-    
+    @media screen and (max-width: 768px) {
+      height: 200px;
+      width: 200px;
+    }
+
     .Image {
       width: 100%;
       height: 100%;
@@ -83,36 +106,39 @@ export const MainCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+
   @media screen and (max-width: 480px) {
     width: 80%;
     height: auto;
     padding: 10px;
   }
 
-
- .PadreDescripcionCard{
+  .PadreDescripcionCard {
     width: 90%;
     height: 40%;
     display: flex;
     flex-direction: column;
-   gap: 5px;
- }
+    gap: 5px;
+  }
 
+  .Title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
 
-    .Title {
-      font-size: 28px;
-      font-weight: 600;
-      color: #fff;
-    }
+  .Description {
+    font-size: 12px;
+    font-weight: 300;
+    color: #d3d3d3;
 
-    .Description {
-      font-size: 12px;
-      font-weight: 300;
-      color: #d3d3d3;
-
-      font-size: 14px;
-    }
-  
+    font-size: 14px;
+  }
 `;
 export const WorkspaceContainer = styled.div`
   width: 100%;
@@ -121,7 +147,7 @@ export const WorkspaceContainer = styled.div`
   flex-direction: column;
 
   gap: 10px;
-  .Tecnologias{
+  .Tecnologias {
     color: #fff;
   }
   .Lenguajes {
@@ -139,18 +165,20 @@ export const WorkspaceContainer = styled.div`
   }
 `;
 
-
-
-
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 10px;
   height: 20%;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+
   @media screen and (max-width: 480px) {
     width: 100%;
     height: auto;
-    
   }
 
   button {
@@ -165,16 +193,17 @@ export const ButtonsContainer = styled.div`
   }
 
   .code {
-    background:${({ theme }) => theme.BotonRun};
+    background: ${({ theme }) => theme.BotonRun};
     color: ${({ theme }) => theme.color};
   }
 
   .run {
-    background:${({ theme }) => theme.BotonRun};
+    background: ${({ theme }) => theme.BotonRun};
     color: ${({ theme }) => theme.color};
   }
 
-  .code:hover, .run:hover {
+  .code:hover,
+  .run:hover {
     transform: scale(1.1);
   }
 `;
