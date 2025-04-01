@@ -26,13 +26,16 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    height: 600px;
+    height: 75vh;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 5px;
     border-radius: 10px;
+
   }
+
+  
 `;
 
 export const ColumnasOne = styled.section`

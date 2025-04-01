@@ -21,7 +21,10 @@ export const ProjectsContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
+        height: 80%;
   }
+
+
 `;
 
 export const CardProject = styled.div`

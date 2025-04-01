@@ -27,7 +27,7 @@ export const ProfileContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 600px;
+    height: 80%;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;

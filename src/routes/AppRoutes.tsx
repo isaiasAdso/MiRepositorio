@@ -14,6 +14,7 @@ const MotionPageWrapper = styled(motion.div)`
   align-items: center;
   justify-content: center;
 
+
 `;
 
 const AppRoutes = () => {
