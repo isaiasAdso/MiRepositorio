@@ -1,0 +1,38 @@
+.layout {
+    position: relative; /* 📌 Asegura que esté sobre las partículas */
+    z-index: 1; /* 🔹 Se coloca sobre el fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  
+  .containerMain {
+    position: relative; /* 📌 Asegura que esté sobre las partículas */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent !important;
+  tap-highlight-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  
