@@ -8,13 +8,13 @@ export const Container = styled.section`
     theme.CardTranparente}; /* Color oscuro con transparencia */
   color: ${({ theme }) => theme.color};
   width: 80%;
-  height: 90%;
+  height: 75vh;
 
   border-radius: 20px;
 
 
   @media screen and (max-width: 1024px) {
-    height: 500px;
+    height: 600px;
     padding: 15px;
   }
 
@@ -32,7 +32,7 @@ export const Container = styled.section`
     overflow-x: hidden;
     padding: 5px;
     border-radius: 10px;
-
+    background-color: transparent;
   }
 
   
@@ -204,21 +204,34 @@ export const MainContentColum1 = styled.div`
   @media screen and (max-width: 480px) {
     overflow-y: hidden;
     flex-direction: column;
+    height: auto;
+
   }
 `;
 export const Secion1Column1 = styled.div`
-  flex: 1;
+  width: 50%;
+  height: 100%;
   overflow-y: hidden;
+
   @media screen and (max-width: 480px) {
+    width: 100%;
     height: auto;
   }
 
 `;
 export const Secion2Column1 = styled.div`
-  flex: 1;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
+ 
 `;
 
 // COLUMNA 2

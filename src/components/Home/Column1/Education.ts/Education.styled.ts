@@ -9,7 +9,7 @@ export const EducationContainer = styled.div`
 
 
   @media screen and (max-width: 480px) {
-    height: 700px;
+    height: 400px;
   }
 `
 

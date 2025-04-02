@@ -16,6 +16,11 @@ export const MyCvContainer = styled.div`
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.0);
   }
+
+  @media screen and (max-width: 480px) {
+    height: 80px;
+   
+  }
 `;
 export const MyCvHeader = styled.div`
   width: 90%;

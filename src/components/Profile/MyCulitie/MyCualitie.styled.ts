@@ -64,7 +64,7 @@ export const QualityTag = styled.span<QualityTagProps>`
   font-size: 14px;
   font-weight: bold;
   height: 30px;
-  width: 170px;
+  width: 160px;
   display: flex;
   align-items: center;
   justify-content: center;

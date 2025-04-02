@@ -19,6 +19,11 @@ export const ContactMeContainer = styled.section`
     transform: scale(1.02);
   }
 
+  @media screen and (max-width: 480px) {
+    height: 150px;
+   
+  }
+
 `;
 export const ContactMeHeader = styled.div`
   width: 90%;

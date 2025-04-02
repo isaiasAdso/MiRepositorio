@@ -1,65 +1,38 @@
-.layout {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
+html, body, a, #root {
+  height: 100dvh; /* Usa dvh para compatibilidad con Safari */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita el scroll vertical */
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* Se adapta a la pantalla */
+}
+
+
 .containerMain {
-  position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  min-height: 85vh;
-  height: 85vh;
-  overflow: hidden;
-  
-
-  @media screen and (max-width: 1024px) {
- 
-  }
-
-  @media screen and (max-width: 768px) {
-    
-  }
-
-  @media screen and (max-width: 480px) {
-    min-height: 80vh;
-    height: 80vh;
-  }
+  flex-grow: 1;  /* Expande para ocupar el espacio disponible */
+  overflow-y: auto; /* Solo permite scroll si es necesario */
+  max-height: calc(100dvh - 120px); /* Ajusta el tamaño restando la altura del navbar */
 
 }
 
 .footerNavbar {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 15vh;
-  height: 15vh;
-  position: relative;
-  z-index: 2;
-
-  @media screen and (max-width: 480px) {
-    min-height: 15vh;
-  height: 15vh;
-  }
-
-}
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
 }

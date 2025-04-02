@@ -80,6 +80,7 @@ export default function Projects() {
         { nombre: "MongoDB", icono: <SiMongodb style={{ color: "#4DB33D" }} /> },
       ],
     },
+    
   ];
 
   return (

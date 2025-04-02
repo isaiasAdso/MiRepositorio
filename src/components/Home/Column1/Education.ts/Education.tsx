@@ -33,7 +33,7 @@ const Education = () => {
   return (
     <EducationContainer>
       <EducationHeader>
-        <EducationTitle>My Education</EducationTitle>
+        <EducationTitle>Mi Educación</EducationTitle>
         <HeaderIcon>
           <FaGraduationCap />
         </HeaderIcon>

@@ -11,10 +11,9 @@ export const ContactContainer = styled.div`
     theme.CardTranparente}; /* Color oscuro con transparencia */
   color: ${({ theme }) => theme.color};
   width: 80%;
-  height: 600px;
-  max-height: 600px;
+  height: 75vh;
   border-radius: 20px;
-  align-items: center;
+
 
   @media screen and (max-width: 1024px) {
     height: 500px;
@@ -28,8 +27,8 @@ export const ContactContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 80%;
-    width: 100%;
+    height: 75vh;
+    width: 95%;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 5px;

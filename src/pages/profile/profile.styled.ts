@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
   display: flex;
+
   gap: 20px;
   padding: 20px;
   background: ${({ theme }) =>
     theme.CardTranparente}; /* Color oscuro con transparencia */
   color: ${({ theme }) => theme.color};
   width: 80%;
-  height: 600px;
-  max-height: 600px;
+  height: 75vh;
   border-radius: 20px;
-  align-items: center;
+  overflow-y: hidden;
 
   
   @media screen and (max-width: 1024px) {
@@ -27,12 +27,13 @@ export const ProfileContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 80%;
-    width: 100%;
+    width: 95%;
+    height: 75vh;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 5px;
     border-radius: 10px;
+    background-color: transparent;
   }
 `;
 export const Column1 = styled.div`

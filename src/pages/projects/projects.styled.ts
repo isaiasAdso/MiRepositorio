@@ -10,9 +10,10 @@ export const ProjectsContainer = styled.div`
   scrollbar-width: none;
   color: ${({ theme }) => theme.color};
 
-  width: 100%;
-  height: 90%;
+  width: 80%;
+  height: 75vh;
   border-radius: 20px;
+
 
   @media screen and (max-width: 1024px) {
   }
@@ -21,15 +22,13 @@ export const ProjectsContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-        height: 80%;
+    height: 75vh;
   }
-
-
 `;
 
 export const CardProject = styled.div`
-  width: 80%;
-  height: 290px;
+  width: 100%;
+
   flex: none;
   display: flex;
   align-items: center;
@@ -48,7 +47,7 @@ export const CardProject = styled.div`
 
   @media screen and (max-width: 480px) {
     width: 100%;
-    height: auto;
+    height: 90%;
     flex-direction: column;
   }
 `;
