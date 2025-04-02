@@ -3,7 +3,8 @@ import { MdDownload } from "react-icons/md";
 
 export function MyCv() {
   const handleDownload = () => {
-    const pdfUrl = "../../../../assets/MiCv/Cv_isaiascaballeromendoza.pdf"; // Ruta del archivo en la carpeta public
+    const pdfUrl = "/MiCv/Cv_isaiascaballeromendoza.pdf"; 
+    // Ruta del archivo en la carpeta public
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Mi_CV.pdf"; // Nombre del archivo al descargar
